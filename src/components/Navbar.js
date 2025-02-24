@@ -68,12 +68,6 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link as={Link} to="/resume">
-                <CgFileDocument style={{ marginBottom: "2px" }} /> {texts[language].resume}
-              </Nav.Link>
-            </Nav.Item>
-
             {/* TOGGLE DE IDIOMA */}
             <Nav.Item className="language-switch">
               <FaGlobe className="language-icon" />

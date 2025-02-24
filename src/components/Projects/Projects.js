@@ -3,10 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import ToDo from "../../Assets/Projects/portfolio_pic5.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import Xaveco from "../../Assets/Projects/portfolio_pic12.png";
 import lSamurai from "../../Assets/Projects/portfolio_pic2.png";
 import memory from "../../Assets/Projects/portfolio_pic3.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import ClientHub from "../../Assets/Projects/portfolio_pic7.png";
 import crashRun from "../../Assets/Projects/portfolio_pic1.png";
 import { LanguageContext } from "../../Context/LanguageContext";
 
@@ -16,6 +16,8 @@ function Projects() {
   const Crash = "/Projetos/CrashJump/index.html";
   const Samurai = "/Projetos/JogoDeLuta/index.html";
   const ToDoList = "/Projetos/ToDoList/index.html";
+  const Client = "/Projetos/CadastroDeCliente/index.html";
+  const Flirt = "/Projetos/DisparadorDeMensagens/index.html";
 
 
   const texts = {
@@ -99,27 +101,29 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={ClientHub}
               isBlog={false}
-              title="AI For Social Good"
+              title="Client Hub"
               description={language === "pt"
-                ? "Usando Processamento de Linguagem Natural (PLN) para detectar postagens relacionadas ao suicídio e ajudar na prevenção."
-                : "Using Natural Language Processing (NLP) to detect suicide-related posts and help with prevention."
+                ? "O Client Hub é um programa simples e básico para o registro de clientes. Focado na praticidade, ele permite manter os dados essenciais organizados de forma intuitiva, sem complicações. Uma solução ideal para quem busca eficiência e simplicidade no gerenciamento de informações."
+                : "Client Hub is a simple and basic program for customer registration. Focused on practicality, it allows you to keep essential data organized in an intuitive way, without complications. An ideal solution for those seeking efficiency and simplicity in managing information."
               }
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              ghLink="https://github.com/wildias/Client-Hub"
+              demoLink={Client}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={Xaveco}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
+              title="FlirtBot 💬❤️"
               description={language === "pt"
-                ? "Modelo treinado com TensorFlow para reconhecer emoções humanas a partir de imagens faciais."
-                : "Model trained with TensorFlow to recognize human emotions from facial images."
+                ? "O FlirtBot  é um programa leve e divertido, criado para enviar mensagens de xaveco pelo WhatsApp. Com uma interface simples e intuitiva, ele permite selecionar entre diversas mensagens pré-definidas ou personalizar seus textos para dar aquele toque especial na hora de iniciar uma conversa. Ideal para descontrair e quebrar o gelo, o XavecoZap foi desenvolvido para fins de entretenimento, sempre incentivando o uso responsável e com o devido consentimento."
+                : "FlirtBot is a lightweight and fun program designed to send pickup messages via WhatsApp. Featuring a simple and intuitive interface, it allows users to choose from various predefined messages or customize their texts to add that special touch when starting a conversation. Ideal for breaking the ice and lightening the mood, XavecoZap is developed for entertainment purposes, always encouraging responsible usage with proper consent."
               }
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              ghLink="https://github.com/wildias/Flirt-Bot"
+              demoLink={Flirt}
             />
           </Col>
         </Row>

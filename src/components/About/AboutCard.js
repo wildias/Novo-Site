@@ -1,7 +1,12 @@
 import React, { useContext } from "react";
 import Card from "react-bootstrap/Card";
+import { Button, Row } from "react-bootstrap";
 import { ImPointRight } from "react-icons/im";
+import { AiOutlineDownload } from "react-icons/ai";
 import { LanguageContext } from "../../Context/LanguageContext";
+import { CgFileDocument } from "react-icons/cg";
+import ResumePT from "../../Assets/WilgnerDias-PT.pdf"
+import ResumeEN from "../../Assets/WilgnerDias-EN.pdf"
 
 function AboutCard() {
   const { language } = useContext(LanguageContext);
@@ -64,9 +69,31 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "{texts[language].quote}"{" "}
+            "{texts[language].quote}"
           </p>
           <footer className="blockquote-footer">Wil Dias</footer>
+
+          {/* Linha com 2 botões */}
+          <Row style={{ justifyContent: "center", position: "relative", marginTop: "20px" }}>
+            <Button
+              variant="primary"
+              href={language === "pt" ? ResumePT : ResumeEN}
+              target="_blank"
+              style={{ maxWidth: "250px", marginRight: "10px" }}
+            >
+              <AiOutlineDownload />
+              &nbsp; {language === "pt" ? "Baixar CV" : "Download CV"}
+            </Button>
+            <Button
+              variant="primary"
+              href="https://github.com/wildias/Certificados"
+              target="_blank"
+              style={{ maxWidth: "250px" }}
+            >
+              <CgFileDocument />
+              &nbsp;{language === "pt" ? "Certificados" : "Certificates"}
+            </Button>
+          </Row>
         </blockquote>
       </Card.Body>
     </Card>
