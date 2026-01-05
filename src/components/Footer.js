@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub, AiOutlineWhatsApp, AiFillInstagram } from "react-icons/ai";
+import { AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -53,12 +54,12 @@ function Footer() {
 
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/wildias17/"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=wildiasdev@gmail.com"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <MdEmail />
               </a>
             </li>
           </ul>

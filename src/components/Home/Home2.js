@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/Wil.png";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiFillInstagram, AiOutlineWhatsApp } from "react-icons/ai";
+import { AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import { LanguageContext } from "../../Context/LanguageContext";
 
@@ -114,12 +115,12 @@ function Home2() {
 
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/wildias17/"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=wildiasdev@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <MdEmail />
                 </a>
               </li>
             </ul>
