@@ -1,0 +1,17 @@
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/background-luta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.btn-player {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+

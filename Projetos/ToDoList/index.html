@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="favicon.png" type="image/png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="estilo.css" rel="stylesheet">
+	<title>Task Flow</title>
+
+</head>
+
+	<body>
+
+		<div class="board">
+			
+			<h3>A Fazer</h3>
+
+			<ul id ="todo" ondrop="drop(event, this.id)" ondragover="over(event)">
+				
+			</ul>
+
+			<div class="add-card" onclick="addCard(this)">
+				
+				<p>Adicionar tarefa</p>
+
+			</div>
+
+		</div>
+		<div class="board">
+			
+			<h3>Fazendo</h3>
+
+			<ul id ="doing" ondrop="drop(event, this.id)" ondragover="over(event)">
+				
+			</ul>
+
+			<div class="add-card" onclick="addCard(this)">
+				
+				<p>Adicionar tarefa</p>
+
+			</div>
+
+		</div>
+		<div class="board">
+			
+			<h3>Finalizado</h3>
+
+			<ul id ="done" ondrop="drop(event, this.id)" ondragover="over(event)">
+				
+			</ul>
+
+			<div class="add-card" onclick="addCard(this)">
+				
+				<p>Adicionar tarefa</p>
+
+			</div>
+
+		</div>
+	</body>
+	<script src="main.js"></script>
+</html>
